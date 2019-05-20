@@ -612,7 +612,7 @@ void menu_advanced_settings() {
     });
   #endif
 
-  #if ENABLED(EEPROM_SETTINGS) && DISABLED(SLIM_LCD_MENUS)
+  #if ENABLED(EEPROM_SETTINGS) //&& DISABLED(SLIM_LCD_MENUS)
     CONFIRM_ITEM(MSG_INIT_EEPROM,
       MSG_BUTTON_INIT, MSG_BUTTON_CANCEL,
       ui.init_eeprom, ui.goto_previous_screen,
