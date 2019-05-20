@@ -601,6 +601,7 @@ void menu_backlash();
     END_MENU();
   }
 
+  #endif // !SLIM_LCD_MENUS
   #if ENABLED(EEPROM_SETTINGS)
 
     #include "../../module/configuration_store.h"
@@ -616,7 +617,7 @@ void menu_backlash();
 
   #endif
 
-#endif // !SLIM_LCD_MENUS
+//#endif // !SLIM_LCD_MENUS
 
 void menu_advanced_settings() {
   START_MENU();
@@ -708,7 +709,7 @@ void menu_advanced_settings() {
     MENU_ITEM_EDIT_CALLBACK(bool, MSG_SD_UPDATE, &sd_update_state, _lcd_toggle_sd_update);
   #endif
 
-  #if ENABLED(EEPROM_SETTINGS) && DISABLED(SLIM_LCD_MENUS)
+  #if ENABLED(EEPROM_SETTINGS) //&& DISABLED(SLIM_LCD_MENUS)
     MENU_ITEM(submenu, MSG_INIT_EEPROM, lcd_init_eeprom_confirm);
   #endif
 
