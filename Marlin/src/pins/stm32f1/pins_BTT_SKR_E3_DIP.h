@@ -229,7 +229,7 @@
 
 #if BOTH(TOUCH_UI_FTDI_EVE, LCD_FYSETC_TFT81050)
 
-  #error "CAUTION! LCD_FYSETC_TFT81050 requires wiring modifications. See 'pins_BTT_SKR_E3_DIP.h' for details. Comment out this line to continue."
+//#error "CAUTION! LCD_FYSETC_TFT81050 requires wiring modifications. See 'pins_BTT_SKR_E3_DIP.h' for details. Comment out this line to continue."
 
   /** FYSETC TFT TFT81050 display pinout
    *
