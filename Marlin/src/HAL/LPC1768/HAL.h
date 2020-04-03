@@ -47,6 +47,11 @@ extern "C" volatile uint32_t _millis;
 #include <pinmapping.h>
 #include <CDCSerial.h>
 
+#define strcat_P(dest, src) strcat((dest), (src))
+#define pgm_read_ptr_far pgm_read_ptr
+#define pgm_read_ptr_near pgm_read_ptr
+#define pgm_read_word_far pgm_read_word
+
 // i2c uses 8-bit shifted address
 #define I2C_ADDRESS(A) uint8_t((A) << 1)
 

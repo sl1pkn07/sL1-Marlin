@@ -233,6 +233,11 @@
 
   /** FYSETC TFT TFT81050 display pinout
    *
+   *               SPI1
+   *        MISO   1 2   5V    (FREE)
+   *         SCK   3 4   MOSI
+   * (FREE)  RST   5 6   GND   (FREE)
+   *
    *               Board                                     Display
    *               _____                                      _____
    *           5V | 1 2 | GND               (SPI1-MISO) MISO | 1 2 | SCK   (SPI1-SCK)
